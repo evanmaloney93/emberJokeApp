@@ -1,0 +1,27 @@
+
+
+<div class="container d-flex h-100 flex-column">
+    <div class="row justify-content-center my-auto text-center">
+      <div class="col-12">
+        {{#if this.isLoading}}
+          <p>Fetching another joke...</p>
+        {{else}}
+          <h1>{{this.model.setup}}</h1>
+          {{#if this.showShowAnswerButton}}    
+            <button class="btn btn-primary mt-3" {{action "togglePunchline"}}>Show Answer</button>
+          {{/if}}
+          {{#if this.showPunchline}}
+            <div class="punchline-container">
+              <p class="punchline">{{this.model.punchline}}</p>
+            </div>
+            <div class="row mt-auto justify-content-center">
+                <div class="col-12 text-center">
+                  <button class="btn btn-green" {{action "fetchNewJoke"}}>New Joke</button>
+                </div>
+              </div>
+          {{/if}}
+        {{/if}}
+      </div>
+    </div>
+
+</div>

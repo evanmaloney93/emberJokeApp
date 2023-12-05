@@ -1,0 +1,76 @@
+html, body {
+    height: 100%; /* Ensure the full height for the root elements */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .container {
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+  }
+  
+  .container.flex-column {
+    justify-content: space-between; /* Distributes space between the main content and the bottom button */
+  }
+  
+  .row .btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .punchline-container {
+    text-align: center; /* Ensures the punchline is centered */
+  }
+  
+  .punchline {
+    font-size: larger;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Maintains inline-block but now within its container */
+  }
+  
+/* Custom Button Styling */
+.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Larger padding for a better shape */
+    font-weight: bold; /* Make the text bold */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #0056b3; /* Darker shade on hover/focus */
+    border-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    border-color: #6c757d;
+    color: white;
+  }
+  
+  .btn-secondary:hover, .btn-secondary:focus {
+    background-color: #545b62; /* Darker shade on hover/focus */
+    border-color: #545b62;
+  }
+  .btn-green {
+    background-color: #28a745; /* Green background */
+    border-color: #28a745; /* Green border */
+    color: white; /* White text */
+  }
+  
+  .btn-green:hover, .btn-green:focus {
+    background-color: #218838; /* Darker green on hover/focus */
+    border-color: #1e7e34;
+  }
+  
+  
